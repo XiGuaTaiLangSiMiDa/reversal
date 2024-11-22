@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reversal Points Detector</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Load TradingView library first -->
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="controls">
+            <select id="tokenSelect">
+                <option value="SOLUSDT">SOL/USDT</option>
+                <option value="BTCUSDT">BTC/USDT</option>
+                <option value="ETHUSDT">ETH/USDT</option>
+                <option value="BNBUSDT">BNB/USDT</option>
+            </select>
+            <button onclick="window.app.fetchAndAnalyze()">Analyze</button>
+        </div>
+        <div id="chart"></div>
+        <div id="log"></div>
+    </div>
+
+    <!-- Load application scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/detector.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
